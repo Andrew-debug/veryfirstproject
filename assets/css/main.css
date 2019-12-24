@@ -1,0 +1,219 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Сверху хуета*/
+
+
+
+
+
+
+
+
+body {
+	margin: 0;
+	background: #000000;
+	box-sizing: border-box;
+}
+
+/*Для всех элементов*/
+*,
+*:before, /*Звездочка не берерт всевдо элменеты во внимание*/
+*:after {
+	box-sizing: border-box; /*Алгоритм подсчета размера блоков с учётом padding'ов,
+	границ и т.д. Если размер блока 400px и пэддинги по 20, то у нас блок останется
+	400px,а контент будет чуть меньше, потому что пэддинг будет внутри блока*/
+}
+
+p {
+	margin: 0;
+}
+
+.header {
+	background: url(../../img/intro.jpg) center no-repeat;
+	background-size: cover;
+    width: 100%;
+    min-width: 1084px;
+    height: 407px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+    top: 0px;
+}
+
+.border {
+	width: 100%;
+	min-width: 1084px;
+	height: 5px;
+	margin: 0 auto;
+    top: 0px;
+	background: linear-gradient(to right, #030609, #d8e8f7);
+}
+
+.mainbcg__img {
+	display: flex;
+	flex-direction: column; /*Каждый новый эл. интро будет начинаться с новой строки*/
+	/*justify-content: center; Выровнять по центру оси Y*/
+	height: 1200px;
+	background: #fff url(../../img/aa.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.sidebar {
+	width: 15%;
+	margin-top: 1%;
+	margin-left: 15%;
+	height: 400px;
+	background: transparent;
+}
+
+.nav_inner {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	margin: 0 auto;
+
+
+}
+
+.btn {
+	border-radius: 2px;
+	border: 0;
+	cursor: pointer;
+
+	margin: 30px 0;
+	
+
+
+	font-family: inherit;
+	font-style: 13px;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	transition: background .1s linear;
+}
+
+.btn--red {
+	position: relative;
+	background-color: #e84545;
+	padding: 10px;
+}
+
+.btn--red:hover {
+	background-color: #dd3434;
+}
+
+.inner__logo1 {
+	position: relative;
+	width: 260px;
+	display: flex;
+	flex-direction: column; 
+	margin-left: 15.5%;
+	background: -webkit-linear-gradient(170deg, rgb(0, 238, 247), red);
+	-webkit-background-clip: text;
+	background-clip: none;
+	-webkit-text-fill-color: transparent;
+}
+
+.xyu--first {
+	margin-left: 15px;
+}
+
+.xyu {
+	font-size: 4em;
+}
+
+.tex {
+	font-family: serif;
+	letter-spacing: -0.1em;
+}
+
+.tex span {
+	vertical-align: -0.2em;
+}
+
+
+.content {
+	position: absolute;
+	float: right;
+	width: 40%;
+	margin-top: 10%;
+	margin-left: 32%;
+	background: transparent;
+	height: 400px;
+}
+
+.content__inner{
+	color: teal;
+}
+
+
+
+
+
+
+
+.footer {
+	width: 100%;
+	height: 150px;
+	background: linear-gradient(to right, #000, #000, #687e95);
+	margin-top: 0;
+}
+
+.quick-links {
+	left: 0;
+	bottom: 0;
+}
+
+small {
+	margin: auto 20px;
+	cursor: pointer;
+	font-size: 12px;
+	color: #19dafa;
+	letter-spacing: 3px;
+
+}
+
